@@ -7,7 +7,7 @@ app.use(bodyparser.urlencoded({extended:true}));
 app.use(express.static("public"));
 app.set('view engine', 'ejs');
 //database connection with mongoose
-mongoose.connect("mongodb+srv://vipulwakode:test123@cluster0.c1tjtia.mongodb.net/todolistDB",{useNewUrlParser: true});
+mongoose.connect("mongodb+srv://vipulwakode:<password>@cluster0.c1tjtia.mongodb.net/todolistDB",{useNewUrlParser: true});
 //creation of schema
 const itemSchema={
     name:String
